@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nikesh Kumar — Data Specialist & CS Student</title>
+<meta name="description" content="Portfolio of Pottabathina Nikesh Kumar — CS student, Data Specialist & Automation Engineer from Andhra Pradesh.">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="ldr"><div class="ldr-txt">Nikesh Kumar</div><div class="ldr-bar"><div class="ldr-fill"></div></div></div>
+
+<!-- CURSOR -->
+<div id="csr"></div><div id="csr2"></div>
+
+<!-- PARTICLES -->
+<canvas id="ptc"></canvas>
+
+<!-- MOBILE MENU -->
+<div class="mob" id="mobMenu">
+  <button class="mob-cls" onclick="closeMob()"><i class="fas fa-times"></i></button>
+  <a href="#home"          onclick="closeMob()">Home</a>
+  <a href="#about"         onclick="closeMob()">About</a>
+  <a href="#skills"        onclick="closeMob()">Skills</a>
+  <a href="#experience"    onclick="closeMob()">Experience</a>
+  <a href="#projects"      onclick="closeMob()">Projects</a>
+  <a href="#certifications" onclick="closeMob()">Certifications</a>
+  <a href="#contact"       onclick="closeMob()">Contact</a>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#home" class="n-logo">NK<span>.</span></a>
+  <div class="n-menu">
+    <a href="#home" class="cur"><i class="fas fa-house" style="font-size:10px;margin-right:4px;"></i>Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certs</a>
+    <a href="#contact" class="n-hire">Hire Me</a>
+  </div>
+  <button class="n-mob" onclick="openMob()"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section id="home">
+  <div class="h-noise"></div><div class="h-grd"></div><div class="h-scan"></div>
+  <div class="h-wrap">
+    <div>
+      <div class="h-tag"><span></span>Open to Work — Full-time &amp; Internship</div>
+      <h1 class="h-name"><span class="l1">Pottabathina</span><span class="l2">Nikesh Kumar</span></h1>
+      <p class="h-role">I'm a <span class="h-typed" id="typed"></span><span class="h-cursor"></span></p>
+      <p class="h-desc">Detail-oriented CS student specialising in AI &amp; ML, with strong foundations in DSA, OOP, and data-driven systems. Passionate about building intelligent, scalable automation solutions.</p>
+      <div class="h-btns">
+        <a href="#contact" class="btn btn-a"><i class="fas fa-paper-plane"></i>Hire Me</a>
+        <a href="#projects" class="btn btn-b"><i class="fas fa-folder-open"></i>Projects</a>
+        <a href="Nikesh_resume (1).pdf" download="Nikesh_Kumar_Resume.pdf" class="btn btn-c"><i class="fas fa-download"></i>Resume</a>
+      </div>
+      <div class="h-links">
+        <a href="https://linkedin.com/in/pottabathina-nikesh-kumar-422508291" target="_blank" class="h-lnk"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/Nikeshkumar13" target="_blank" class="h-lnk"><i class="fab fa-github"></i></a>
+        <a href="https://wa.me/919391647391" target="_blank" class="h-lnk"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:pnikeshkumarpottabathina@gmail.com" class="h-lnk"><i class="fas fa-envelope"></i></a>
+        <a href="https://leetcode.com/u/nikesh13/" target="_blank" class="h-lnk"><i class="fas fa-code"></i></a>
+      </div>
+    </div>
+    <div class="h-av">
+      <div class="av-ring1"></div><div class="av-ring2"></div>
+      <div class="av-blob">
+        <img src="me.jpg" alt="Nikesh Kumar" onerror="this.style.display='none'">
+        <div class="av-ph"><i class="fas fa-user"></i></div>
+      </div>
+      <div class="fb fb1">
+        <div class="fb-row"><div class="fb-dot"></div><div><div class="fb-label">Open to Work</div><div class="fb-sub">Full-time / Internship</div></div></div>
+      </div>
+      <div class="fb fb2">
+        <div class="fb-nums">
+          <div><div class="fb-n">3+</div><div class="fb-l">Projects</div></div>
+          <div><div class="fb-n">6+</div><div class="fb-l">Certs</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="h-scrl"><span>Scroll</span><div class="h-wheel"><div class="h-ball"></div></div></div> -->
+</section>
+
+<!-- ══ ABOUT ══ -->
+<section id="about" class="sec alt">
+  <div class="wrap">
+    <div data-r>
+      <div class="ab-img">
+        <img src="profile.jpg" alt="Nikesh Kumar" onerror="this.style.display='none'">
+        <div class="ab-img-ph"><i class="fas fa-user"></i></div>
+        <div class="ab-img-ov"></div>
+        <div class="ab-img-tag">
+          <div class="ab-img-tag-r">Data Specialist &amp; CS Student</div>
+          <div class="ab-img-tag-l"><i class="fas fa-map-marker-alt"></i>Jaggayyapet, Andhra Pradesh</div>
+        </div>
+      </div>
+    </div>
+    <div class="ab-rt">
+      <div data-r data-d="1">
+        <div class="sec-lbl">Who I Am</div>
+        <h2 class="sec-h">Turning Data<br>into <span class="g">Decisions</span></h2>
+      </div>
+      <div data-r data-d="2">
+        <p>I'm a Computer Science student (AI &amp; ML) at Aditya College of Engineering &amp; Technology, combining rigorous academic foundations with hands-on experience in data pipelines, automation, and business analytics.</p>
+        <p>From building RAG document systems and Power Automate workflows to solving DSA challenges on LeetCode — I thrive where clean code meets real-world impact.</p>
+      </div>
+      <div style="display:flex;gap:11px;flex-wrap:wrap;margin-top:26px;" data-r data-d="3">
+        <a href="#projects" class="btn btn-a"><i class="fas fa-rocket"></i>My Projects</a>
+        <a href="Nikesh_resume (1).pdf" download="Nikesh_Kumar_Resume.pdf" class="btn btn-c"><i class="fas fa-download"></i>Download Resume</a>
+        <a href="#contact" class="btn btn-b">Let's Talk <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SKILLS ══ -->
+<section id="skills" class="sec">
+  <div style="text-align:center;max-width:660px;margin:0 auto 40px;" data-r>
+    <div class="sec-lbl c">Technical Arsenal</div>
+    <h2 class="sec-h">Skills &amp; <span class="gr">Technologies</span></h2>
+  </div>
+  <div class="sk-search-wrap" data-r>
+    <div class="sk-search"><i class="fas fa-search"></i><input type="text" id="skQ" placeholder="Search skills..." oninput="skSearch()" autocomplete="off"></div>
+  </div>
+  <div class="sk-tabs" data-r data-d="1">
+    <button class="sk-tb on" onclick="skTab(this,'all')"><i class="fas fa-th-large"></i>All Skills</button>
+    <button class="sk-tb" onclick="skTab(this,'lang')"><i class="fas fa-code"></i>Languages</button>
+    <button class="sk-tb" onclick="skTab(this,'tool')"><i class="fas fa-layer-group"></i>Tools &amp; Platforms</button>
+    <button class="sk-tb" onclick="skTab(this,'cloud')"><i class="fas fa-cloud"></i>Cloud &amp; DevOps</button>
+    <button class="sk-tb" onclick="skTab(this,'core')"><i class="fas fa-microchip"></i>Core CS</button>
+  </div>
+
+  <div class="sk-grid" id="skGrid" data-r data-d="2">
+
+    <!-- Languages -->
+    <div class="sk-card" data-cat="lang" data-nm="python">
+      <div class="sk-top"><div class="sk-ico" style="background:rgba(55,118,171,.18);border:1px solid rgba(55,118,171,.32);"><svg viewBox="0 0 128 128" width="34" height="34"><path fill="#3776AB" d="M63.4 2c-4.2.02-8.25.38-11.8 1-10.45 1.85-12.35 5.71-12.35 12.84v9.41h24.69v3.14H29.98c-7.18 0-13.46 4.31-15.43 12.52-2.27 9.4-2.37 15.27 0 25.09 1.75 7.31 5.95 12.52 13.12 12.52h8.49V67.23c0-8.15 7.05-15.34 15.43-15.34h24.66c6.87 0 12.35-5.65 12.35-12.55V15.83c0-6.69-5.65-11.72-12.35-12.84C72.65 2.29 68.25 1.98 63.4 2zM50.04 9.56c2.55 0 4.63 2.12 4.63 4.72 0 2.59-2.08 4.69-4.63 4.69-2.56 0-4.63-2.1-4.63-4.69 0-2.6 2.07-4.72 4.63-4.72z"/><path fill="#FFD43B" d="M91.68 28.38v10.97c0 8.5-7.21 15.65-15.43 15.65H51.59c-6.75 0-12.35 5.78-12.35 12.55v23.51c0 6.69 5.82 10.63 12.35 12.55 7.82 2.3 15.31 2.71 24.66 0 6.22-1.8 12.35-5.42 12.35-12.55v-9.41H63.94v-3.14h37.01c7.18 0 9.85-5 12.35-12.52 2.58-7.73 2.47-15.17 0-25.09-1.77-7.14-5.16-12.52-12.35-12.52h-9.27zM77.81 87.93c2.56 0 4.63 2.1 4.63 4.69 0 2.6-2.07 4.72-4.63 4.72-2.55 0-4.63-2.12-4.63-4.72 0-2.59 2.08-4.69 4.63-4.69z"/></svg></div><span class="sk-badge ba">Intermediate</span></div>
+      <div><div class="sk-name">Python</div><div class="sk-cat"><i class="fas fa-code"></i>Programming Languages</div></div>
+    </div>
+
+    <div class="sk-card" data-cat="lang" data-nm="java">
+      <div class="sk-top"><div class="sk-ico" style="background:rgba(248,152,32,.18);border:1px solid rgba(248,152,32,.32);"><svg viewBox="0 0 128 128" width="34" height="34"><path fill="#f89820" d="M47.6 98.1s-3 1.74 2.13 2.33c6.22.71 9.4.61 16.26-.68 0 0 1.81 1.13 4.33 2.11-15.39 6.59-34.82-.38-22.72-3.76zm-1.9-8.17s-3.36 2.49 1.77 3.02c6.64.68 11.89.74 20.96-1 0 0 1.26 1.27 3.23 1.97-18.56 5.43-39.21.43-25.96-3.99z"/><path fill="#f89820" d="M69.8 61.67c3.78 4.35-1 8.35-1 8.35s9.59-4.95 5.18-11.14c-4.13-5.77-7.29-8.64 9.85-18.55 0 0-26.91 6.72-14.03 21.34z"/><path fill="#f89820" d="M49.66 125.19c14.12.9 35.81-.5 36.31-7.21 0 0-.99 2.53-11.69 4.53-12.07 2.26-26.95 1.99-35.78.55 0 0 1.81 1.5 11.16 2.13z"/></svg></div><span class="sk-badge ba">Intermediate</span></div>
+      <div><div class="sk-name">Java</div><div class="sk-cat"><i class="fas fa-code"></i>Programming Languages</div></div>
+    </div>
+
+    <div class="sk-card" data-cat="lang" data-nm="sql">
+      <div class="sk-top"><div class="sk-ico" style="background:rgba(0,117,143,.18);border:1px solid rgba(0,117,143,.32);"><i class="fas fa-database" style="font-size:32px;color:#00758f;"></i></div><span class="sk-badge ba">Intermediate</span></div>
+      <div><div class="sk-name">SQL</div><div class="sk-cat"><i class="fas fa-code"></i>Programming Languages</div></div>
+    </div>
+
+    <div class="sk-card" data-cat="lang" data-nm="c c++">
+      <div class="sk-top"><div class="sk-ico" style="background:rgba(0,89,157,.18);border:1px solid rgba(0,89,157,.32);"><svg viewBox="0 0 128 128" width="34" height="34"><path fill="#00599D" d="M115.4 30.7L67.1 2.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48 27.9c-1.7 1-2.9 3.5-2.9 5.4v55.7c0 1.1.2 2.4 1 3.5l106.8-62c-.6-1.2-1.5-2.1-2.4-2.7z"/><path fill="#004482" d="M10.7 95.3c.5.8 1.2 1.5 1.9 1.9l48.2 27.9c.8.5 1.9.7 3.1.7 1.2 0 2.3-.3 3.1-.7l48-27.9c1.7-1 2.9-3.5 2.9-5.4V36.1c0-.9-.1-1.9-.6-2.8l-106.6 62z"/><path fill="#fff" d="M85.3 76.1C81.1 83.5 73.1 88.5 64 88.5c-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6z"/></svg></div><span class="sk-badge bi">Intermediate</span></div>
+      <div><div class="sk-name">C / C++</div><div class="sk-cat"><i class="fas fa-code"></i>Programming Languages</div></div>
+    </div>
+
+    <!-- Tools -->
+    <div class="sk-card" data-cat="tool" data-nm="power bi">
+      <div class="sk-top"><div class="sk-ico" style="background:rgba(243,186,47,.18);border:1px solid rgba(243,186,47,.32);"><svg viewBox="0 0 48 48" width="36" height="36"><path fill="#f3ba2f" d="M8 6h14v14H8z"/><path fill="#7a5f0c" d="M22 6h18v14H22z"/><path fill="#00897b" d="M8 20h14v14H8z"/><path fill="#e53935" d="M22 20h18v14H22z"/></svg></div><span class="sk-badge bx">Expert</span></div>
+      <div><div class="sk-name">Power BI</div><div class="sk-cat"><i class="fas fa-layer-group"></i>Tools &amp; Platforms</div></div>
+    </div>
+
+    <div class="sk-card" data-cat="tool" data-nm="power automate">
+      <div class="sk-top"><div class="sk-ico" style="background:rgba(0,120,212,.18);border:1px solid rgba(0,120,212,.32);"><svg viewBox="0 0 48 48" width="36" height="36"><circle cx="24" cy="24" r="20" fill="#0078d4"/><path d="M14 24l7 7 13-14" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><span class="sk-badge bx">Expert</span></div>
+      <div><div class="sk-name">Power Automate</div><div class="sk-cat"><i class="fas fa-layer-group"></i>Tools &amp; Platforms</div></div>
+    </div>
+
+    <div class="sk-card" data-cat="tool" data-nm="powerapps">
+      <div class="sk-top"><div class="sk-ico" style="background:rgba(116,75,162,.18);border:1px solid rgba(116,75,162,.32);"><svg viewBox="0 0 48 48" width="36" height="36"><rect width="48" height="48" rx="8" fill="#744ba2"/><path d="M12 16h10v10H12zm14 0h10v10H26zM12 30h10v10H12zm14 0h10v10H26z" fill="#fff" opacity=".85"/></svg></div><span class="sk-badge ba">Intermediate</span></div>
+      <div><div class="sk-name">PowerApps</div><div class="sk-cat"><i class="fas fa-layer-group"></i>Tools &amp; Platforms</div></div>
+    </div>
+
+    <div class="sk-card" data-cat="tool" data-nm="sharepoint">
+      <div class="sk-top"><div class="sk-ico" style="background:rgba(0,114,239,.18);border:1px solid rgba(0,114,239,.32);"><svg viewBox="0 0 48 48" width="36" height="36"><rect width="48" height="48" rx="6" fill="#0072ef"/><path d="M10 14h28v3H10zm0 8h20v3H10zm0 8h24v3H10z" fill="#fff"/></svg></div><span class="sk-badge ba">Intermediate</span></div>
+      <div><div class="sk-name">SharePoint</div><div class="sk-cat"><i class="fas fa-layer-group"></i>Tools &amp; Platforms</div></div>
+    </div>
+
+    <div class="sk-card" data-cat="tool" data-nm="ms excel excel">
+      <div class="sk-top"><div class="sk-ico" style="background:rgba(33,115,70,.18);border:1px solid rgba(33,115,70,.32);"><svg viewBox="0 0 48 48" width="36" height="36"><rect width="48" height="48" rx="6" fill="#217346"/><path d="M28 10h8v28h-8z" fill="#fff" opacity=".6"/><path d="M10 10h20v28H10z" fill="#fff" opacity=".85"/><path d="M12 18l5 8-5 8h4l3-6 3 6h4l-5-8 5-8h-4l-3 6-3-6z" fill="#217346"/></svg></div><span class="sk-badge bx">Expert</span></div>
+      <div><div class="sk-name">MS Excel</div><div class="sk-cat"><i class="fas fa-layer-group"></i>Tools &amp; Platforms</div></div>
+    </div>
+
+    <!-- Cloud -->
+    <div class="sk-card" data-cat="cloud" data-nm="git">
+      <div class="sk-top"><div class="sk-ico" style="background:rgba(240,80,50,.18);border:1px solid rgba(240,80,50,.32);"><svg viewBox="0 0 128 128" width="34" height="34"><path fill="#F34F29" d="M124.7 58.4L69.6 3.3a8.2 8.2 0 00-11.6 0L46.6 14.7l14.6 14.6a9.7 9.7 0 0112.3 12.4l14 14a9.7 9.7 0 11-5.8 5.5L68.7 47.5v32.5a9.7 9.7 0 11-8-.26V47.1a9.7 9.7 0 01-5.3-12.7L40.98 19.84 3.26 57.57a8.2 8.2 0 000 11.55l55.1 55.1a8.2 8.2 0 0011.6 0l54.8-54.8a8.2 8.2 0 000-11.04z"/></svg></div><span class="sk-badge ba">Intermediate</span></div>
+      <div><div class="sk-name">Git</div><div class="sk-cat"><i class="fas fa-cloud"></i>Cloud &amp; DevOps</div></div>
+    </div>
+
+    <div class="sk-card" data-cat="cloud" data-nm="github">
+      <div class="sk-top"><div class="sk-ico" style="background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);"><svg viewBox="0 0 128 128" width="34" height="34"><path fill="#fff" d="M64 5.1C30.7 5.1 3.6 32.1 3.6 65.5c0 26.7 17.3 49.3 41.3 57.3 3 .56 4.1-1.31 4.1-2.9 0-1.44-.06-6.2-.08-11.25-16.8 3.65-20.35-7.12-20.35-7.12-2.75-6.98-6.7-8.84-6.7-8.84-5.48-3.75.41-3.67.41-3.67 6.06.42 9.26 6.22 9.26 6.22 5.38 9.23 14.12 6.56 17.57 5.02.54-3.9 2.11-6.57 3.83-8.08-13.4-1.52-27.5-6.7-27.5-29.84 0-6.6 2.36-11.98 6.22-16.21-.62-1.52-2.7-7.66.58-15.98 0 0 5.07-1.62 16.6 6.19C53.7 35 58.87 34.33 64 34.3c5.13.02 10.3.69 15.13 2.03 11.52-7.81 16.59-6.19 16.59-6.19 3.29 8.32 1.22 14.46.59 15.98 3.87 4.23 6.22 9.62 6.22 16.21 0 23.19-14.13 28.3-27.58 29.8 2.17 1.87 4.1 5.55 4.1 11.18 0 8.08-.07 14.58-.07 16.57 0 1.61 1.09 3.49 4.15 2.9 23.98-7.99 41.26-30.62 41.26-57.29C124.4 32.1 97.3 5.1 64 5.1z"/></svg></div><span class="sk-badge ba">Intermediate</span></div>
+      <div><div class="sk-name">GitHub</div><div class="sk-cat"><i class="fas fa-cloud"></i>Cloud &amp; DevOps</div></div>
+    </div>
+
+    <div class="sk-card" data-cat="cloud" data-nm="google cloud gcp">
+      <div class="sk-top"><div class="sk-ico" style="background:rgba(66,133,244,.18);border:1px solid rgba(66,133,244,.32);"><svg viewBox="0 0 64 64" width="34" height="34"><path fill="#4285F4" d="M32 10L20 30h12V10z"/><path fill="#EA4335" d="M20 30l-8 14h20L20 30z"/><path fill="#FBBC05" d="M32 10l12 20H32V10z"/><path fill="#34A853" d="M44 30L32 50 20 44h24z"/></svg></div><span class="sk-badge bi">Intermediate</span></div>
+      <div><div class="sk-name">Google Cloud</div><div class="sk-cat"><i class="fas fa-cloud"></i>Cloud &amp; DevOps</div></div>
+    </div>
+
+    <div class="sk-card" data-cat="cloud" data-nm="snowflake">
+      <div class="sk-top"><div class="sk-ico" style="background:rgba(41,182,246,.18);border:1px solid rgba(41,182,246,.32);"><svg viewBox="0 0 48 48" width="34" height="34"><path fill="#29b6f6" d="M24 8c-4.4 0-8 3.6-8 8 0 .7.1 1.4.3 2.1C13.7 19.2 12 21.9 12 25c0 4.4 3.6 8 8 8h16c3.3 0 6-2.7 6-6s-2.7-6-6-6c-.1 0-.3 0-.4.01C35.3 11.8 30.1 8 24 8z"/></svg></div><span class="sk-badge ba">Intermediate</span></div>
+      <div><div class="sk-name">Snowflake</div><div class="sk-cat"><i class="fas fa-cloud"></i>Cloud &amp; DevOps</div></div>
+    </div>
+
+    <!-- Core CS -->
+    <div class="sk-card" data-cat="core" data-nm="data structures algorithms dsa">
+      <div class="sk-top"><div class="sk-ico" style="background:rgba(255,190,61,.15);border:1px solid rgba(255,190,61,.28);"><i class="fas fa-sitemap" style="font-size:30px;color:#ffbe3d;"></i></div><span class="sk-badge bx">Expert</span></div>
+      <div><div class="sk-name">DSA</div><div class="sk-cat"><i class="fas fa-microchip"></i>Core CS</div></div>
+    </div>
+
+    <div class="sk-card" data-cat="core" data-nm="oop object oriented programming">
+      <div class="sk-top"><div class="sk-ico" style="background:rgba(255,190,61,.15);border:1px solid rgba(255,190,61,.28);"><i class="fas fa-cubes" style="font-size:30px;color:#ffbe3d;"></i></div><span class="sk-badge ba">Intermediate</span></div>
+      <div><div class="sk-name">OOP</div><div class="sk-cat"><i class="fas fa-microchip"></i>Core CS</div></div>
+    </div>
+
+    <div class="sk-card" data-cat="core" data-nm="dbms database">
+      <div class="sk-top"><div class="sk-ico" style="background:rgba(255,190,61,.15);border:1px solid rgba(255,190,61,.28);"><i class="fas fa-server" style="font-size:30px;color:#ffbe3d;"></i></div><span class="sk-badge ba">Intermediate</span></div>
+      <div><div class="sk-name">DBMS</div><div class="sk-cat"><i class="fas fa-microchip"></i>Core CS</div></div>
+    </div>
+
+    <div class="sk-card" data-cat="core" data-nm="operating systems os">
+      <div class="sk-top"><div class="sk-ico" style="background:rgba(255,190,61,.15);border:1px solid rgba(255,190,61,.28);"><i class="fas fa-microchip" style="font-size:30px;color:#ffbe3d;"></i></div><span class="sk-badge bi">Intermediate</span></div>
+      <div><div class="sk-name">Operating Systems</div><div class="sk-cat"><i class="fas fa-microchip"></i>Core CS</div></div>
+    </div>
+
+    <div class="sk-card" data-cat="core" data-nm="generative ai llm rag vector">
+      <div class="sk-top"><div class="sk-ico" style="background:rgba(61,255,160,.1);border:1px solid rgba(61,255,160,.24);"><i class="fas fa-brain" style="font-size:30px;color:var(--green);"></i></div><span class="sk-badge bi">Intermediate</span></div>
+      <div><div class="sk-name">Generative AI</div><div class="sk-cat"><i class="fas fa-microchip"></i>Core CS</div></div>
+    </div>
+
+  </div>
+  <div class="sk-empty" id="skEmpty"><i class="fas fa-search"></i>No skills match your search.</div>
+</section>
+
+<!-- ══ EXPERIENCE ══ -->
+<section id="experience" class="sec alt">
+  <div style="text-align:center;" data-r>
+    <div class="sec-lbl c">Work History</div>
+    <h2 class="sec-h">Professional <span class="g">Experience</span></h2>
+  </div>
+  <div class="exp-wrap">
+    <div class="exp-item" data-r data-d="1">
+      <div class="exp-dot"></div>
+      <div class="exp-card">
+        <div class="exp-top">
+          <div class="exp-role"><i class="fas fa-briefcase"></i>Data Specialist Intern</div>
+          <div class="exp-date"><i class="fas fa-calendar-alt" style="margin-right:5px;"></i>May 2025 — June 2025</div>
+        </div>
+        <div class="exp-co"><i class="fas fa-building"></i>Technical Hub Pvt Ltd &nbsp;<i class="fas fa-map-marker-alt" style="font-size:10px;color:var(--muted);"></i><span style="color:var(--muted);font-size:12px;">India</span></div>
+        <ul class="exp-li">
+          <li>Built data processing workflows and end-to-end analytics pipelines from raw ingestion to insight delivery</li>
+          <li>Automated reporting systems, significantly reducing manual effort and human error across the team</li>
+          <li>Worked with real-world datasets to generate actionable business insights supporting strategic decisions</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROJECTS ══ -->
+<section id="projects" class="sec">
+  <div style="text-align:center;" data-r>
+    <div class="sec-lbl c">Portfolio</div>
+    <h2 class="sec-h">Featured <span class="gr">Projects</span></h2>
+  </div>
+  <div class="pj-grid">
+    <div class="pj-card" data-r data-d="1">
+      <div class="pj-thumb"><div class="pj-bg pb1"></div><i class="fas fa-mobile-alt pj-icon pi1"></i><div class="pj-chip pc1">Low-Code App</div></div>
+      <div class="pj-body">
+        <div class="pj-title">Campus Requirement Management System</div>
+        <p class="pj-desc">Low-code application built with PowerApps and Power Automate to manage campus resource requests with automated approval workflows.</p>
+        <ul class="pj-pts"><li>Resource request forms built in PowerApps</li><li>Automated approval workflows via Power Automate</li><li>Real-time status updates and notifications</li></ul>
+        <div class="pj-foot">
+          <div class="pj-tags"><span class="ptag">PowerApps</span><span class="ptag">Power Automate</span></div>
+          <a href="https://github.com/Nikeshkumar13/CampusRequirementFlow" target="_blank" class="pj-gh"><i class="fab fa-github"></i>GitHub <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="pj-card" data-r data-d="2">
+      <div class="pj-thumb"><div class="pj-bg pb2"></div><i class="fas fa-bolt pj-icon pi2"></i><div class="pj-chip pc2">Automation</div></div>
+      <div class="pj-body">
+        <div class="pj-title">Smart Sync — Automation Engine</div>
+        <p class="pj-desc">Data synchronisation engine using Power Automate, cutting manual data entry by 50% with event-driven workflows.</p>
+        <ul class="pj-pts"><li>Event-driven workflows with conditional branching</li><li>SharePoint integration for real-time sync</li><li>50% reduction in manual data entry</li></ul>
+        <div class="pj-foot">
+          <div class="pj-tags"><span class="ptag">Power Automate</span><span class="ptag">SharePoint</span></div>
+          <a href="https://github.com/Nikeshkumar13/Smart-Sync" target="_blank" class="pj-gh"><i class="fab fa-github"></i>GitHub <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="pj-card" data-r data-d="3">
+      <div class="pj-thumb"><div class="pj-bg pb3"></div><i class="fas fa-chart-line pj-icon pi3"></i><div class="pj-chip pc3">Analytics</div></div>
+      <div class="pj-body">
+        <div class="pj-title">Sales Data Analysis &amp; Optimization</div>
+        <p class="pj-desc">End-to-end sales analytics pipeline from raw SQL data to executive Power BI dashboards tracking key KPIs.</p>
+        <ul class="pj-pts"><li>100+ records via SQL joins &amp; aggregations</li><li>Power BI dashboards for KPI monitoring</li><li>Identified trends for data-driven decisions</li></ul>
+        <div class="pj-foot">
+          <div class="pj-tags"><span class="ptag">SQL</span><span class="ptag">Power BI</span><span class="ptag">Excel</span></div>
+          <a href="https://github.com/Nikeshkumar13" target="_blank" class="pj-gh"><i class="fab fa-github"></i>GitHub <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CERTIFICATIONS ══ -->
+<section id="certifications" class="sec alt">
+  <div style="text-align:center;" data-r>
+    <div class="sec-lbl c">Credentials</div>
+    <h2 class="sec-h">Certifications &amp; <span class="g">Achievements</span></h2>
+  </div>
+  <div class="ct-grid">
+
+    <a class="ct-card" style="--cc:#ff5f6d;" href="https://github.com/Nikeshkumar13/certification/blob/main/clmsCertificate%20fundamentals%20nikesh%20java.pdf" target="_blank" rel="noopener" data-r data-d="1">
+      <div class="ct-ico co-or"><i class="fab fa-java"></i></div>
+      <div><div class="ct-name">Java Foundations<i class="fas fa-circle-check ct-chk"></i></div><div class="ct-issuer"><i class="fas fa-award"></i>Oracle University</div></div>
+      <span class="ct-ext"><i class="fas fa-external-link-alt"></i>View</span>
+    </a>
+
+    <a class="ct-card" style="--cc:#00a0e6;" href="https://github.com/Nikeshkumar13/certification/blob/main/python%20certificate%20in%20netacade.pdf" target="_blank" rel="noopener" data-r data-d="2">
+      <div class="ct-ico co-ci"><i class="fab fa-python"></i></div>
+      <div><div class="ct-name">Python Programming (NetAcad)<i class="fas fa-circle-check ct-chk"></i></div><div class="ct-issuer"><i class="fas fa-award"></i>Cisco Networking Academy</div></div>
+      <span class="ct-ext"><i class="fas fa-external-link-alt"></i>View</span>
+    </a>
+
+    <a class="ct-card" style="--cc:#00a0e6;" href="https://github.com/Nikeshkumar13/certification/blob/main/Python%20Programming%20Essentials%20INFORCSE.pdf" target="_blank" rel="noopener" data-r data-d="3">
+      <div class="ct-ico co-ci"><i class="fas fa-network-wired"></i></div>
+      <div><div class="ct-name">Python Programming (INFORCSE)<i class="fas fa-circle-check ct-chk"></i></div><div class="ct-issuer"><i class="fas fa-award"></i>Cisco Networking Academy</div></div>
+      <span class="ct-ext"><i class="fas fa-external-link-alt"></i>View</span>
+    </a>
+
+    <a class="ct-card" style="--cc:#4285f4;" href="https://github.com/Nikeshkumar13/certification/blob/main/google%20cloud%20gen%20ai%20certi.pdf" target="_blank" rel="noopener" data-r data-d="1">
+      <div class="ct-ico co-go"><i class="fas fa-brain"></i></div>
+      <div><div class="ct-name">Introduction to Generative AI<i class="fas fa-circle-check ct-chk"></i></div><div class="ct-issuer"><i class="fab fa-google"></i>Google Cloud Skills Boost</div></div>
+      <span class="ct-ext"><i class="fas fa-external-link-alt"></i>View</span>
+    </a>
+
+    <a class="ct-card" style="--cc:#29b6f6;" href="https://github.com/Nikeshkumar13/certification/blob/main/snowflake%20certificate.pdf" target="_blank" rel="noopener" data-r data-d="2">
+      <div class="ct-ico co-sn"><i class="fas fa-snowflake"></i></div>
+      <div><div class="ct-name">Data Cloud Fundamentals<i class="fas fa-circle-check ct-chk"></i></div><div class="ct-issuer"><i class="fas fa-award"></i>Snowflake University</div></div>
+      <span class="ct-ext"><i class="fas fa-external-link-alt"></i>View</span>
+    </a>
+
+    <a class="ct-card" style="--cc:#3dffa0;" href="https://www.hackerrank.com/profile/pnikeshkumarpot1" target="_blank" rel="noopener" data-r data-d="3">
+      <div class="ct-ico co-hk"><i class="fab fa-hackerrank"></i></div>
+      <div><div class="ct-name">Python &amp; SQL Certification<i class="fas fa-circle-check ct-chk"></i></div><div class="ct-issuer"><i class="fas fa-award"></i>HackerRank</div></div>
+      <span class="ct-ext"><i class="fas fa-external-link-alt"></i>View</span>
+    </a>
+
+    <a class="ct-card" style="--cc:#00a0e6;" href="link" target="_blank" rel="noopener" data-r data-d="2">
+      <div class="ct-ico co-ci"><i class="fab fa-python"></i></div>
+      <div><div class="ct-name">MS Power Platform Architect (PL-600)<i class="fas fa-circle-check ct-chk"></i></div><div class="ct-issuer"><i class="fas fa-award"></i>Cisco Networking Academy</div></div>
+      <span class="ct-ext"><i class="fas fa-external-link-alt"></i>View</span>
+    </a>
+
+  </div>
+</section>
+
+<!-- ══ CONTACT ══ -->
+<section id="contact" class="sec">
+  <div class="co-wrap">
+    <div class="co-info">
+      <div data-r>
+        <div class="sec-lbl">Get in Touch</div>
+        <h2 class="sec-h">Let's Build<br><span class="gr">Something Great</span></h2>
+      </div>
+      <p data-r data-d="1">Open to internships, full-time roles, collaborations and interesting data or engineering challenges. Drop a message — I'll reply quickly.</p>
+      <div data-r data-d="2">
+        <div class="co-row"><div class="co-icon"><i class="fas fa-envelope"></i></div><div><div class="co-lbl">Email</div><div class="co-val"><a href="mailto:pnikeshkumarpottabathina@gmail.com">pnikeshkumarpottabathina@gmail.com</a></div></div></div>
+        <div class="co-row"><div class="co-icon"><i class="fas fa-phone"></i></div><div><div class="co-lbl">Phone</div><div class="co-val"><a href="tel:+919391647391">+91 93916 47391</a></div></div></div>
+        <div class="co-row"><div class="co-icon"><i class="fas fa-map-marker-alt"></i></div><div><div class="co-lbl">Location</div><div class="co-val">Jaggayyapet, Andhra Pradesh, India</div></div></div>
+      </div>
+      <div class="co-socials" data-r data-d="3">
+        <a href="https://linkedin.com/in/pottabathina-nikesh-kumar-422508291" target="_blank" class="co-soc"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/Nikeshkumar13" target="_blank" class="co-soc"><i class="fab fa-github"></i></a>
+        <a href="https://wa.me/919391647391" target="_blank" class="co-soc"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://leetcode.com/u/nikesh13/" target="_blank" class="co-soc"><i class="fas fa-code"></i></a>
+        <a href="https://www.hackerrank.com/profile/pnikeshkumarpot1" target="_blank" class="co-soc"><i class="fab fa-hackerrank"></i></a>
+        <a href="https://www.codechef.com/users/nikesh_78" target="_blank" class="co-soc"><i class="fas fa-code-branch"></i></a>
+      </div>
+    </div>
+    <div class="co-form" data-r data-d="2">
+      <h3 class="sec-h" style="font-size:24px;margin-bottom:22px;">Send a <span class="g">Message</span></h3>
+      <form id="cform" onsubmit="sendMsg(event)">
+        <div class="f2">
+          <div class="field"><label for="fn"><i class="fas fa-user"></i>Name</label><input type="text" id="fn" placeholder="Your name" required></div>
+          <div class="field"><label for="fe"><i class="fas fa-envelope"></i>Email</label><input type="email" id="fe" placeholder="your@email.com" required></div>
+        </div>
+        <div class="field"><label for="fs"><i class="fas fa-tag"></i>Subject</label><input type="text" id="fs" placeholder="Project Inquiry / Collaboration"></div>
+        <div class="field"><label for="fm"><i class="fas fa-comment-dots"></i>Message</label><textarea id="fm" rows="5" placeholder="Tell me about your project or opportunity…" required></textarea></div>
+        <button type="submit" class="btn btn-a" id="sbtn" style="width:100%;justify-content:center;"><i class="fas fa-paper-plane"></i>Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft-left">&copy; 2025 <span>Pottabathina Nikesh Kumar</span>. Crafted with <i class="fas fa-heart" style="color:#ff5f6d;margin:0 3px;"></i> &amp; <i class="fas fa-code" style="color:var(--accent);margin:0 3px;"></i></div>
+  <div class="ft-right"><span class="ft-loc"><i class="fas fa-map-marker-alt"></i>Jaggayyapet, AP, India</span><a href="#home" class="ft-top"><i class="fas fa-arrow-up"></i></a></div>
+</footer>
+
+<script src="./script.js" >
+
+</script>
+</body>
+</html>
